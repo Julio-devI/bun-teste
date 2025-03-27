@@ -21,7 +21,8 @@ searchButton.addEventListener('click', async () => {
     loadingSpinner.style.display = 'block';
 
     try {
-        const response = await fetch(`http://localhost:3000/api/scrape?keyword=${encodeURIComponent(keyword)}`);
+        // Usa caminho relativo com proxy
+        const response = await fetch(`/api/scrape?keyword=${encodeURIComponent(keyword)}`);
 
         if (!response.ok) {
             throw new Error('Network response was not ok');
