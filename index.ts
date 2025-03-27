@@ -34,7 +34,7 @@ app.get('/api/scrape', async (req, res) => {
                 const imageElement = item.querySelector('.s-image');
 
                 return {
-                    title: titleElement ? titleElement.textContent.trim() : 'Título não disponível',
+                    title: titleElement ? titleElement.textContent.trim() : 'title not found',
                     rating: ratingElement ? parseFloat(ratingElement.textContent.split(' ')[0]) : null,
                     reviews: reviewsElement ? parseInt(reviewsElement.textContent.replace(/\./g, '')) : 0,
                     imageUrl: imageElement ? imageElement.getAttribute('src') : null
