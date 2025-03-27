@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Scraper</title>
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Amazon Product Scraper</h1>
+
+    <div class="search-container">
+        <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter product keyword"
+                class="search-input"
+        >
+        <button
+                id="searchButton"
+                class="search-button"
+        >
+            Search
+        </button>
+    </div>
+
+    <div
+            id="loadingSpinner"
+            class="loading-spinner"
+    ></div>
+
+    <div
+            id="resultsContainer"
+            class="results-container"
+    >
+        <!-- Products will be dynamically inserted here -->
+    </div>
+
+    <div
+            id="errorMessage"
+            class="error-message"
+    ></div>
+</div>
+
+<script type="module" src="assets/js/jsconfig.js"></script>
+</body>
+</html>
