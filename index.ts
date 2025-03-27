@@ -5,7 +5,7 @@ import { JSDOM } from 'jsdom';
 const app = express();
 const PORT = 3000;
 
-app.get('/api/scrape', async (req, res) => {
+app.get('/scrape', async (req, res) => {
     const keyword = req.query.keyword as string;
 
     if (!keyword) {
