@@ -1,4 +1,4 @@
-import './styles.css';
+import '../css/styles.css';
 
 const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchButton');
