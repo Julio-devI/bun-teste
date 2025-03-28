@@ -9,13 +9,25 @@ This project is an Amazon product scraper that uses Bun, Express, Axios, and JSD
 
 ## Installation
 1. Clone the repository
-2. Run `bun install`
-3. Run `npm install`
+2. in the project repository 
+3. cd backend 
+4. Run `npm install`
+5. cd frontend 
+6. Run `bun install`
+7. cd backend 
+8. Run `bun run index.ts`
+9. cd frontend 
+10. Run `npm run dev`
+11. enter in `http://localhost:5173/`
 
 ## Running the Project
 Start the server:
 ```bash
+cd backend
 bun run index.ts
+
+cd frontend 
+npm run dev
 ```
 
 Make a GET request to:
@@ -37,8 +49,8 @@ curl "http://localhost:3000/scrape?keyword=smartphone"
 - `index.ts`: Main server and scraping logic
 - `package.json`: Project dependencies and scripts
 - `README.md`: Project documentation
-- `src` : Frontend directory
-- `assets` : Project assets
+- `frontend` : Frontend directory
+- `backend` : Backend directory
 - `js` : Project javascript
 
 ## Important Considerations
@@ -61,4 +73,4 @@ curl "http://localhost:3000/scrape?keyword=smartphone"
 The biggest challenges for me were the integration of the frontend with the backend using Vite because it was the first time I used Bun since I work more in other technologies, making requests to Amazon and not being blocked was one of the initial concerns as well, but given the nature of the test this difficulty was easily resolved.
 
 ## License
-[Add your license information here]
+MIT
