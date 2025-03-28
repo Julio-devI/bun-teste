@@ -1,9 +1,17 @@
 import express from 'express';
 import axios from 'axios';
 import { JSDOM } from 'jsdom';
+import cors from 'cors';
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors({
+    origin: 'http://localhost:5173',
+    credentials: true
+}))
+
+app.use(express.json());
 
 app.get('/scrape', async (req, res) => {
     const keyword = req.query.keyword as string;
