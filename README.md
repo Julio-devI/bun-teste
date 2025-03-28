@@ -74,3 +74,8 @@ The biggest challenges for me were the integration of the frontend with the back
 
 ## License
 MIT
+
+## Images
+![image](https://github.com/user-attachments/assets/d055d4bb-5a70-4195-bf60-bcc67986ae82)
+![image](https://github.com/user-attachments/assets/6d1fb817-47cd-4ca1-b5dc-831c69a47162)
+
