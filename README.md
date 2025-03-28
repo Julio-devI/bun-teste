@@ -47,7 +47,6 @@ curl "http://localhost:3000/scrape?keyword=smartphone"
 - Web scraping may be against the site's robots.txt
 - Implement rate limiting in production
 - Selectors might change, requiring periodic updates
-- I couldn't integrate with frontend
 
 ## Potential Improvements
 - Add error handling
